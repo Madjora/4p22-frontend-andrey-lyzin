@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+ }
+.box {
+   width: 100px;
+   height: 100px;
+   background-color: blue;
+
+   border-width: 5px;
+   border-style: solid;
+   border-color: #ff0000
+
+    /* border: 5px solid #ff0000 */
+
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: lime;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px; 
+  column-gap: 10px; 
+}
