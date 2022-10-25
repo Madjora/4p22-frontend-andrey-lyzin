@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    background: #1B2489;
+}
+
+
+.container-form {
+    position: relative;
+    background: white;
+    border-radius: calc(19 / 1440 * 100vw);
+    width: calc(600 / 1440 * 100vw);
+    height: calc(430 / 1440 * 100vw);
+    margin-top: calc(80 / 1440 * 100vw);
+    margin-left: calc(412 / 1440 * 100vw);
+    padding-top: calc(26 / 1440 * 100vw);
+    padding-right: calc(45 / 1440 * 100vw);
+    padding-bottom: calc(45 / 1440 * 100vw);
+    padding-left: calc(45 / 1440 * 100vw);
+    box-shadow: 0px 0px 50px 10px rgb(0 0 0 / 30%);
+}
+
+
+.container-form__h1 {
+    margin: 0;
+    font-size: calc(50 / 1440 * 100vw);
+    text-align: center;
+    color: #78787D;
+}
+
+
+.container-form__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-form__label {
+    color: #78787D;
+    font-size: calc(19 / 1440 * 100vw);
+}
+
+
+.container-form__input {
+    height: calc(45 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    padding-left: calc(12 / 1440 * 100vw);
+    border: 2px solid #78787D;
+    margin-bottom: calc(15 / 1440 * 100vw);
+    border-radius: calc(10 / 1440 * 100vw);
+}
+
+
+::placeholder {
+    color: #ded9d9;
+    font-weight: 700;
+}
+
+
+.container-form__checkbox {
+    margin-bottom: calc(30 / 1440 * 100vw);
+}
+
+
+.container-form__input-checkbox {
+    position: relative;
+    visibility: hidden;
+}
+
+
+.container-form__input-checkbox::before {
+    position: absolute;
+    content: "";
+    visibility: visible;
+    display: block;
+    top: 0;
+    left: 0;
+    width: calc(24 / 1440 * 100vw);
+    height: calc(24 / 1440 * 100vw);
+    border: 2px solid #78787D;
+    border-radius: calc(7 / 1440 * 100vw);
+}   
+
+
+.container-form__input-checkbox:checked::after {
+    position: absolute;
+    content: "✔";
+    bottom: calc(3 / 1440 * 100vw);
+    left: calc(3 / 1440 * 100vw);
+    width: calc(24 / 1440 * 100vw);
+    height: calc(24 / 1440 * 100vw);
+    font-size: calc(32 / 1440 * 100vw);
+    display: block;
+    visibility: visible;
+    color: #78787D;
+}
+
+
+.container-form__label-checkbox {
+    display: inline-block;
+    color: #78787D;
+    margin-top: calc(20 / 1440 * 100vw);
+    padding-left: calc(17 / 1440 * 100vw);
+    font-size: calc(19 / 1440 * 100vw);
+    line-height: calc(16 / 1440 * 100vw);
+}
+
+
+.container-form__button {
+    width: calc(180 / 1440 * 100vw);
+    height: calc(50 / 1440 * 100vw);
+    font-size: calc(24 / 1440 * 100vw);
+    font-weight: 700;
+    background: #1B2489;
+    color: white;
+    border-radius: calc(10 / 1440 * 100vw);
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form {
+        width: calc(720 / 768 * 100vw);
+        height: calc(440/ 768 * 100vw);
+        margin: 5% auto;
+        padding: 5.5% 6.5%;
+        padding-right: 9.5%;
+        padding-bottom: 6.5%;
+        padding-left: 9.5%;
+        background: white;
+        box-shadow: 0 0 calc(40 / 768 * 100vw) calc(10 / 768 * 100vw)
+          rgba(0, 0, 0, 0.25);
+        border-radius: calc(15 / 768 * 100vw);
+      }
+  }
+
+
+  @media screen and (max-width: 769px) {
+.container-form__input {
+    width: 100%;
+    height: calc(49 / 768 * 100vw);
+    padding-left: 1.8%;
+    border: calc(3 / 768 * 100vw) solid #78787D;
+    border-radius: calc(10 / 768 * 100vw);
+    background: white;
+    font-weight: 700;
+    font-size: calc(28 / 768 * 100vw);
+    line-height: calc(36 / 768 * 100vw);
+    color:  #78787D;
+   }
+}
+
+
+@media  screen and (max-width: 769px) {
+    .container-form__label {
+        margin: 0.8% 0.7%;
+        font-weight: 700;
+        font-size: calc(18 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: #787878;
+    }
+}
+
+
+@media  screen and (max-width: 769px) {
+    .container-form__h1 {
+        font-weight: 800;
+        font-size: calc(38 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form__input-checkbox::before {
+      margin-top: calc(6 / 768 * 100vw);   
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form__label-checkbox {
+        font-size: calc(28 / 1440 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form__button {
+        width: calc(250 / 1440 * 100vw);
+        height: calc(70 / 1440 * 100vw);
+        font-size: calc(35 / 1440 * 100vw);
+        font-weight: 700;
+        background: #1B2489;
+        color: white;
+        border-radius: calc(10 / 1440 * 100vw);
+        margin: 0 auto; 
+    }
+}
