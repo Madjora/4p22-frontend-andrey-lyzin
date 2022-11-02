@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+.header__login:visited {
+    color: #1B2489;
+}
+
+
+.header {
+    height: calc(80 / 1440 * 100vw);
+    display: flex;
+    box-shadow: 0px calc(4 / 1440 * 100vw) calc(4 / 1440 * 100vw) rgba(0, 0, 0, 0.30); 
+}
+
+
+.header__img {
+    width: calc(270 / 1440 * 100vw);
+    height: calc(45 / 1440 * 100vw);
+    margin: 0 calc(30 / 1440 *100vw);
+    align-self: center;
+   
+}
+
+
+.header__h1 {
+    font-size: calc(38 / 1440 * 100vw);
+    align-self: center;
+    color: #78787D;
+}
+
+
+.header__nav {
+    margin-left: auto;
+    margin-right: calc(30 / 1440 *100vw);
+    font-size: calc(24 / 1440 * 100vw);
+    font-weight: 700;
+    align-self: center;
+}
+
+
+.header__registration {
+    margin-right: calc(30 / 1440 *100vw);
+    text-decoration: none;
+    color: #78787D;
+}
+
+
+.header__login {
+    text-decoration: none;
+    color: #78787D;
+}
+
+
+.container-form {
+    position: relative;
+    width: calc(600 / 1440 * 100vw);
+    margin-top: calc(80 / 1440 * 100vw);
+    margin-left: calc(412 / 1440 * 100vw);
+    padding-top: calc(26 / 1440 * 100vw);
+    padding-right: calc(45 / 1440 * 100vw);
+    padding-left: calc(45 / 1440 * 100vw);
+    box-shadow: 0px 0px 50px 10px rgb(0 0 0 / 30%);
+}
+
+
+.container-form__h1 { 
+    margin: 0;
+    font-size: calc(48 / 1440 * 100vw);
+    text-align: center;
+    color: #78787D;
+}
+
+
+.container-form__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-form__label {
+    color: #78787D;
+    font-size: calc(16 / 1440 * 100vw);
+    font-weight: 700;
+}
+
+
+.container-form__input {
+    height: calc(49 / 1440 * 100vw);
+    font-size: calc(28 / 1440 * 100vw);
+    font-weight: 700;
+    color: #78787D;
+    padding-left: calc(12 / 1440 * 100vw);
+    border: 2px solid #78787D;
+    margin-bottom: calc(15 / 1440 * 100vw);
+}
+
+
+.container-form__input::placeholder {
+    color: #ded9d9;
+    font-weight: 700;
+}
+
+
+.container-form__button {
+    width: calc(180 / 1440 * 100vw);
+    height: calc(52 / 1440 * 100vw);
+    font-size: calc(24 / 1440 * 100vw);
+    font-weight: 700;
+    color: white;
+    background: #1B2489;
+    margin: calc(45 / 1440 * 100vw ) auto;
+}
+
+
+/*  mobil version  */
+
+
+@media screen and (max-width: 769px) {
+    .header {
+        height: calc(80 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .header__img {
+        width: calc(124 / 768 * 100vw);
+        height: calc(25 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .header__h1 {
+        font-size: calc(24 / 768 * 100vw);
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        font-size: calc(16 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form {
+        width: calc(600 / 768 * 100vw);
+        margin: calc(80 / 768 * 100vw);
+        padding-top: calc(26 / 768 * 100vw);
+        padding-right: calc(45 / 768 * 100vw);
+        padding-bottom: calc(45 / 768 * 100vw);
+        padding-left: calc(45 / 768 * 100vw);
+
+    }
+}
+
+
+@media  screen and (max-width: 769px) {
+    .container-form__h1 {
+        font-weight: 700;
+        font-size: calc(38 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form__input {
+        width: 100%;
+        height: calc(49 / 768 * 100vw);
+        padding-left: 1.8%;
+        border: calc(3 / 768 * 100vw) solid #78787D;
+        background: white;
+        font-weight: 700;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+   }
+}
+
+
+@media  screen and (max-width: 769px) {
+    .container-form__label {
+        font-weight: 700;
+        font-size: calc(18 / 768 * 100vw);
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .container-form__button {
+        width: calc(180 / 768 * 100vw);
+        height: calc(52 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        margin: calc(30 / 768 * 100vw) auto; 
+    }
+}    
